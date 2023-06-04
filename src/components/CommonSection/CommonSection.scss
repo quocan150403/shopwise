@@ -1,0 +1,41 @@
+.common-section {
+  padding: 70px 0;
+  background-color: #f7f8fb !important;
+  margin-bottom: 100px;
+  .common-section-title {
+    font-size: 2.8rem;
+    line-height: 4.2rem;
+    text-transform: capitalize;
+    font-weight: 600;
+  }
+}
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: flex-end;
+
+  .breadcrumb-item {
+    font-size: 1.5rem;
+    color: var(--heading-color);
+    text-transform: capitalize;
+    transition: all 0.3s ease-in-out;
+
+    &:hover:not(:last-child) {
+      color: var(--primary-color);
+    }
+    a::after {
+      content: '>';
+      margin: 0 8px;
+
+      color: #6c757d;
+    }
+    span {
+      color: var(--text-color);
+    }
+  }
+
+  li + li {
+    // margin-left: 10px;
+  }
+}

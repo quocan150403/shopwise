@@ -8,7 +8,7 @@ const cx = classNames.bind(styles);
 
 function DefaultLayout({ children }) {
   return (
-    <div className={cx('default-layout')}>
+    <div>
       <Header />
       <main className={cx('main')}>{children}</main>
       <Footer />

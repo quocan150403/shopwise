@@ -1,0 +1,136 @@
+/* Billing Details */
+.form-checkout {
+  box-shadow: none;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.checkout-billing textarea {
+  width: 100%;
+  font-size: 1.5rem;
+  color: var(--account-color);
+  font-weight: 400;
+  font-family: var(--montserrat-font);
+  padding: 16px;
+  outline: none;
+  border: 1px solid #e0e4e7;
+  border-radius: 4px;
+  color: #666;
+}
+
+.form-heading-checkout {
+  font-size: 2.4rem;
+  letter-spacing: 1px;
+  color: #333;
+  font-weight: 600;
+  margin: 25px 0 15px;
+}
+
+.form-checkout {
+  margin: 0;
+  padding: 0;
+  box-shadow: none;
+}
+
+/* Orders */
+.checkout-orders {
+  padding: 30px;
+  background-color: #f7f7f7;
+  border-radius: 4px;
+}
+
+.checkout-orders__list,
+.checkout-orders__list-other {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.checkout-orders__item {
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #000;
+  font-weight: 400;
+  font-family: var(--montserrat-font);
+  padding: 10px;
+}
+
+.checkout-orders__list-other li {
+  border-top: 1px solid #e5e3e3;
+}
+
+.checkout-orders__item.head {
+  border-top: 1px solid #e5e3e3;
+  border-bottom: 1px solid #e5e3e3;
+}
+
+.checkout-orders__item span {
+  font-weight: 600;
+  color: #333;
+}
+
+.checkout-orders__item-product {
+  min-width: 70%;
+}
+
+.checkout-orders__list-payment {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  margin: 20.5px 0;
+}
+
+.checkout-orders__item-payment {
+  font-size: 1.6rem;
+  font-family: var(--montserrat-font);
+  line-height: 2.4rem;
+  color: #000;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  padding: 16px 0 0;
+}
+
+.checkout-orders__item-payment label {
+  margin-left: 6px;
+  cursor: pointer;
+}
+
+/* ================== Responsive ==================*/
+/* mobile and tablet width < 1024px*/
+@media (max-width: 63.9375em) {
+  .checkout-billing {
+    margin-bottom: 20px;
+  }
+}
+
+/* Tablet: width >= 740px and width < 1024px */
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+  .form-heading-checkout {
+    font-size: 2.6rem;
+  }
+
+  .checkout-orders__item,
+  .checkout-orders__item-payment label {
+    font-size: 1.8rem;
+  }
+}
+
+/* Mobile: width < 740px */
+@media (max-width: 46.1875em) {
+  .checkout-orders {
+    padding: 15px;
+  }
+
+  .checkout-orders__item {
+    padding: 10px 0;
+  }
+
+  .checkout-orders__item-product {
+    min-width: 80%;
+  }
+}
